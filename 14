@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+
+int main()
+{
+    int a[9]={500,200,100,50,20,10,5,2,1};
+    int b,c,i=0;
+    printf("enter the value");
+    scanf("%d",&b);
+    for(i=0;i<10;i++){
+        c=b/a[i];
+        printf("the notes of %d is %d\n",a[i],c);
+        b=b-(c*a[i]);
+    }
+    return 0;
+}
